@@ -4,8 +4,7 @@ author: rick-anderson
 description: The dotnet aspnet-codegenerator command scaffolds ASP.NET Core projects.
 monikerRange: '>= aspnetcore-2.1'
 ms.author: riande
-ms.date: 11/16/2020
-no-loc: [Home, Privacy, Kestrel, appsettings.json, "ASP.NET Core Identity", cookie, Cookie, Blazor, "Blazor Server", "Blazor WebAssembly", "Identity", "Let's Encrypt", Razor, SignalR]
+ms.date: 12/05/2022
 uid: fundamentals/tools/dotnet-aspnet-codegenerator
 ---
 
@@ -19,13 +18,13 @@ By [Rick Anderson](https://twitter.com/RickAndMSFT)
 
 Install the [.NET SDK](https://dotnet.microsoft.com/download).
 
-`dotnet-aspnet-codegenerator` is a [global tool](/dotnet/core/tools/global-tools) that must be installed. The following command installs the latest stable version of the `dotnet-aspnet-codegenerator` tool:
+`dotnet aspnet-codegenerator` is a [global tool](/dotnet/core/tools/global-tools) that must be installed. The following command installs the latest stable version of the `dotnet aspnet-codegenerator` tool:
 
 ```dotnetcli
 dotnet tool install -g dotnet-aspnet-codegenerator
 ```
 
-The following command updates `dotnet-aspnet-codegenerator` to the latest stable version available from the installed .NET Core SDKs:
+The following command updates `dotnet aspnet-codegenerator` to the latest stable version available from the installed .NET Core SDKs:
 
 ```dotnetcli
 dotnet tool update -g dotnet-aspnet-codegenerator
@@ -35,7 +34,7 @@ dotnet tool update -g dotnet-aspnet-codegenerator
 
 It may be necessary to uninstall the `aspnet-codegenerator` to resolve problems. For example, if you installed a preview version of `aspnet-codegenerator`, uninstall it before installing the released version.
 
-The following commands uninstall the `dotnet-aspnet-codegenerator` tool and installs the latest stable version:
+The following commands uninstall the `dotnet aspnet-codegenerator` tool and installs the latest stable version:
 
 ```dotnetcli
 dotnet tool uninstall -g dotnet-aspnet-codegenerator
@@ -163,7 +162,7 @@ Razor Pages can be individually scaffolded by specifying the name of the new pag
 * `Details`
 * `List`
 
-For example, the following command uses the Edit template to generate *MyEdit.cshtml* and *MyEdit.cshtml.cs*:
+For example, the following command uses the Edit template to generate `MyEdit.cshtml` and `MyEdit.cshtml.cs`:
 
 ```dotnetcli
 dotnet aspnet-codegenerator razorpage MyEdit Edit -m Movie -dc RazorPagesMovieContext -outDir Pages/Movies
@@ -208,7 +207,7 @@ Views can be individually scaffolded by specifying the name of the view and the 
 * `Details`
 * `List`
 
-For example, the following command uses the Edit template to generate *MyEdit.cshtml*:
+For example, the following command uses the Edit template to generate `MyEdit.cshtml`:
 
 ```dotnetcli
 dotnet aspnet-codegenerator view MyEdit Edit -m Movie -dc MovieContext -outDir Views/Movies
